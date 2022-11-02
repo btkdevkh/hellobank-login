@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  font-family: sans-serif;
+  background-color: #0a809a;
+}
+.container {
+  max-width: 924px;
+  margin: 35px auto;
+}
+li {
+  list-style-type: none
+}
+
+/* header */
+header {
+  margin-bottom: 75px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  flex-grow: 1;
+}
+.return-to-hellobank {
+  margin-right: 25px;
+  margin-top: -30px;
+  border: 1px solid #fff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+} 
+
+/* main */
+.main .container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.login-form div {
+  position: relative;
+}
+.input-label {
+  display: block;
+  font-size: 0.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.input-element {
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  font-size: 1.2rem;
+}
+.login-form span {
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c0c0c0;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.login-form span::before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  width: 1px;
+  height: 35px;
+  background-color: #c0c0c0;
+}
+input:disabled {
+  cursor: default;
+  background-color: #fff;
+}
+
+/* nums lock */
+.num-lock {
+  margin-bottom: 55px;
+  margin-top: 20px;
+}
+.num-lock ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 70px 70px;
+  gap: 3px;
+}
+.num-lock ul li {
+  background-color: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: #5d5c5c;
+}
+.submit {
+  width: 230px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #e56d6d;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.submit:disabled {
+  color: #ddd;
+  background-color: rgba(245, 103, 103, 0.5);
+}

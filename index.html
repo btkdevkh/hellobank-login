@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./logo-grand.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.js" defer></script>
+  <title>Hello Bank Clone | Login</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="./logo-grand.png" alt="">
+      </div>
+      <a href="./index.html" class="return-to-hellobank">Retour à Hellobank</a>
+    </div>
+  </header>
+
+  <!-- login input -->
+  <main class="main">
+    <div class="container">
+      <form class="login-form">
+        <div>
+          <label class="input-label" for="client-nums">1. Identifiez-vous avec votre numéro client</label>
+          <input class="input-element" type="text">
+          <span class="reset-input">x</span>
+        </div>
+        <div class="code-secret">
+          <label class="input-label" for="client-nums">2. Votre code secret (6 chiffres)</label>
+          <input class="input-element" type="text" disabled>
+          <span class="reset-input">x</span>
+        </div>
+
+        <div class="num-lock">
+          <ul>
+          </ul>
+        </div>
+
+        <input disabled class="submit" type="submit" value="Accéder aux comptes">
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
